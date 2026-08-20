@@ -8,17 +8,13 @@ on:
     branches:
       - main
 
-permissions:
-  id-token: write
-  contents: read
-
 env:
   TF_WORKING_DIR: "environments/dev"
-  # Authentication variables for Azure using OIDC Federated Credentials
+  # Authentication variables for Azure (Using Client Secret)
   ARM_CLIENT_ID: "07183f67-d83e-4661-a146-498cc168eabe"
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_SECRET }}
   ARM_SUBSCRIPTION_ID: "bc9d2c5e-f99f-4142-8f22-8f6dae37180d"
   ARM_TENANT_ID: "0f7010fd-209e-4344-8457-043ffb37143b"
-  ARM_USE_OIDC: "true"
 
 jobs:
   security-scan:
@@ -72,6 +68,8 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: "1.5.0"
+
+
 
       - name: Terraform Init
         id: init
