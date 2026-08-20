@@ -13,7 +13,7 @@ env:
   # Authentication variables for Azure (Using Client Secret)
   ARM_CLIENT_ID: "07183f67-d83e-4661-a146-498cc168eabe"
   ARM_CLIENT_SECRET: ${{ secrets.ARM_SECRET }}
-  ARM_SUBSCRIPTION_ID: "bc9d2c5e-f99f-4142-8f22-8f6dae37180d"
+  ARM_SUBSCRIPTION_ID: "1075ec7a-b17a-4f37-bf3f-9d68c4506dc1"
   ARM_TENANT_ID: "0f7010fd-209e-4344-8457-043ffb37143b"
 
 jobs:
