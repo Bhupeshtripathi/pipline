@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 # ☁️ Axion Monolithic Infrastructure ☁️
@@ -114,3 +115,7 @@ terraform apply -auto-approve
 Made with ❤️ by the DevOps Insiders Team 
 
 </div>
+=======
+# pipline
+PIPLINE Project
+>>>>>>> 54bf7389f3b90c699eeac1f5efe286576f4f03a6
