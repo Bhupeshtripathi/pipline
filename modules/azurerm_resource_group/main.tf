@@ -3,4 +3,5 @@ resource "azurerm_resource_group" "this" {
   name     = each.value.name
   location = each.value.location
   #for pipline
+  #3rd change
 }
